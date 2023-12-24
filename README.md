@@ -6,7 +6,7 @@ Our goal is to develop an innovative drink-taste search engine. This search engi
 To achieve our goals, word embedding techniques and document augmentation will play important roles in this project. We'll leverage them for capture the complicated relationship between flavor, ingredient, and making processes. Also, Pretrained deep learning models will be used to rank beverages, ensuring accurate recommendations. So far, we have tried pure BM25 to rank documents by queries without any documentation and word embedding. It will be am important baseline for our further works.
 
 *Flow of the Drink-Taste Search Engine*
-![image](https://github.com/show0117/Beverage_Recommendation_System_Based_on_Descriptive_Query/blob/main/Flow of Search Engine.jpg)
+![image](https://github.com/show0117/Beverage_Recommendation_System_Based_on_Descriptive_Query/blob/main/Flow_of_Search_Engine.jpg)
 
 ## Database
 Our data is sourced from the website <https://www.allrecipes.com/>. Initially, we conducted web scraping on the URLs of beverage recipes from the "Drinks" category, found under <https://www.allrecipes.com/recipes/77/drinks/>. We obtained URLs from 18 subcategories within 
