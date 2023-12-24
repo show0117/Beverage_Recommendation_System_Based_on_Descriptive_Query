@@ -104,7 +104,6 @@ class InvertedIndex:
                             
         return result
 
-    # NOTE: changes in this method for HW2    
     def save(self, index_directory_name) -> None:
                 
         inverted_index = {'statistics': self.statistics, 'index': self.index, 'vocabulary': list(self.vocabulary), 'document_metadata': self.document_metadata}
@@ -116,7 +115,6 @@ class InvertedIndex:
             json.dump(inverted_index, f, ensure_ascii=False, indent=4)
             
 
-    # NOTE: changes in this method for HW2
     def load(self, index_directory_name) -> None:
         # TODO load the index files from disk to a Python object
         filepath = os.path.join(index_directory_name, 'inverted_index.json')
@@ -227,7 +225,7 @@ class BasicInvertedIndex(InvertedIndex):
                             
         return result
 
-    # NOTE: changes in this method for HW2    
+    
     def save(self, index_directory_name) -> None:
                 
         inverted_index = {'statistics': self.statistics, 'index': self.index, 'vocabulary': list(self.vocabulary), 'document_metadata': self.document_metadata}
@@ -239,7 +237,6 @@ class BasicInvertedIndex(InvertedIndex):
             json.dump(inverted_index, f, ensure_ascii=False, indent=4)
             
 
-    # NOTE: changes in this method for HW2
     def load(self, index_directory_name) -> None:
         # TODO load the index files from disk to a Python object
         filepath = os.path.join(index_directory_name, 'inverted_index.json')
