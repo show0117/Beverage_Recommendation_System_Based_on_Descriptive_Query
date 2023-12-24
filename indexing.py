@@ -3,26 +3,6 @@ import json
 import os
 from tqdm import tqdm
 from collections import Counter, defaultdict
-import shelve
-from document_preprocessor import Tokenizer
-import gzip
-
- 
-'''
-Here you will be implemeting the indexing strategies for your search engine. You will need to create, persist and load the index.
-This will require some amount of file handling.
-Use libraries such as tqdm, orjson, collections.Counter, shelve if you need them.
-DO NOT use the pickle module.
-NOTE: 
-There are a few changes to the indexing file for HW2.
-The changes are marked with a comment `# NOTE: changes in this method for HW2`. 
-Please see more in the README.md.
-'''
-from enum import Enum
-import json
-import os
-from tqdm import tqdm
-from collections import Counter, defaultdict
 from document_preprocessor import Tokenizer
 import gzip
 
